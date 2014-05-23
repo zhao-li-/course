@@ -22,7 +22,7 @@
             "path": "/angular part-one template/views/"
         },
         {
-            "name": "main.js",
+            "name": "main_controller.js",
             "path": "/angular part-one template/scripts/controllers/"
         }
     ],

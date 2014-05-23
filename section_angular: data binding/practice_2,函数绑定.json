@@ -13,7 +13,7 @@
     "specs_dir": "/specs",
     "files": [
         {
-            "name": "order_details.js",
+            "name": "order_details_controller.js",
             "path": "/angular part-one template/scripts/controllers/"
         },
         {

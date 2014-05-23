@@ -13,16 +13,16 @@
     "specs_dir": "/specs",
     "files": [
         {
-            "name": "HelpOrderingController.js",
-            "path": "/angular part-one template/js/controller/"
+            "name": "order_details.js",
+            "path": "/angular part-one template/scripts/controllers/"
         },
         {
-            "name": "help_ordering_page.html",
-            "path": "/angular part-one template/pages/"
+            "name": "order_details.html",
+            "path": "/angular part-one template/views/"
         },
         {
             "name": "routes.js",
-            "path": "/angular part-one template/js/setting/"
+            "path": "/angular part-one template/scripts/"
         }
     ],
     "spec": {

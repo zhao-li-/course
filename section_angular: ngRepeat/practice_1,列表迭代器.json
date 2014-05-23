@@ -17,12 +17,12 @@
     "specs_dir": "/specs",
     "files": [
         {
-            "name": "ChoosePeopleController.js",
-            "path": "/angular part-one template/js/controller/"
+            "name": "choose_person.js",
+            "path": "/angular part-one template/scripts/controllers/"
         },
         {
-            "name": "choose_people_page.html",
-            "path": "/angular part-one template/pages/"
+            "name": "choose_person.html",
+            "path": "/angular part-one template/views/"
         }
     ],
     "spec": {

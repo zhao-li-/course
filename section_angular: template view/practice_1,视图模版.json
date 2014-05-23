@@ -15,15 +15,15 @@
     "files": [
         {
             "name": "routes.js",
-            "path": "/angular part-one template/js/setting/"
+            "path": "/angular part-one template/scripts/"
         },
         {
-            "name": "home_page.html",
-            "path": "/angular part-one template/pages/"
+            "name": "main.html",
+            "path": "/angular part-one template/views/"
         },
         {
-            "name": "HomePageController.js",
-            "path": "/angular part-one template/js/controller/"
+            "name": "main.js",
+            "path": "/angular part-one template/scripts/controllers/"
         }
     ],
     "spec": {

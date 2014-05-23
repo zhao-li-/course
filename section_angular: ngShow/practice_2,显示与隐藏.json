@@ -13,8 +13,8 @@
     "specs_dir": "/specs",
     "files": [
         {
-            "name": "help_ordering_page.html",
-            "path": "/angular part-one template/pages/"
+            "name": "order_details.html",
+            "path": "/angular part-one template/views/"
         }
     ],
     "spec": {

@@ -14,7 +14,7 @@
     "specs_dir":"/specs",
     "files": [
         {
-            "name": "routes.js",
+            "name": "route.js",
             "path": "/angular part-one template/scripts/"
         },
         {

@@ -23,6 +23,10 @@ angular.module('orderMasterApp')
 
 
     $scope.choose_person = function (person_name) {
+
+
+
+
     }
 
 

@@ -13,13 +13,9 @@ angular
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl'
             })
-//            .when('/name', {
-//                templateUrl: 'views/name.html',
-//                controller: 'name'
-//            })
-            .when('/order_details', {
-                templateUrl: 'views/order_details.html',
-                controller: 'OrderDetailsCtrl'
+            .when('/name', {
+                templateUrl: 'views/name.html',
+                controller: 'name'
             })
             .when('/choose_person', {
                 templateUrl: 'views/choose_person.html',

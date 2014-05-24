@@ -10,7 +10,12 @@ angular.module('orderMasterApp')
 
 
     //*****************在这里添加你的代码*****************
-        $scope.choose_people = "选人";
+
+
+
+
+
+
 
 
 

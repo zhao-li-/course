@@ -50,7 +50,7 @@ function compute_result_of_js_angular_section_2_practice_1() {
         });
     }
 
-    function get_choose_people(){
+    function test_choose_people(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
             var scope = angular.element(order_details_page_id).scope();
@@ -68,7 +68,7 @@ function compute_result_of_js_angular_section_2_practice_1() {
             source.postMessage(false, "http://" + window.location.host);
         }
     }
-    setTimeout(function() {get_choose_people()}, 700);
+    setTimeout(function() {test_choose_people()}, 700);
 
 }
 
@@ -82,8 +82,8 @@ function compute_result_of_js_angular_section_2_practice_2() {
         });
     }
 
-    setTimeout(function() {get_go_choose_function()}, 700);
-    function get_go_choose_function(){
+    setTimeout(function() {test_go_choose_person_function()}, 700);
+    function test_go_choose_person_function(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
             var scope = angular.element(order_details_page_id).scope();
@@ -109,8 +109,8 @@ function compute_result_of_js_angular_section_3_practice_1() {
         });
     }
 
-    setTimeout(function() {get_go_choose_person_function()}, 700);
-    function get_go_choose_person_function(){
+    setTimeout(function() {test_go_choose_person_function()}, 700);
+    function test_go_choose_person_function(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
             var scope = angular.element(order_details_page_id).scope();
@@ -152,8 +152,8 @@ function compute_result_of_js_angular_section_4_practice_1() {
         });
     }
 
-    setTimeout(function() {get_go_choose_person_function()}, 700);
-    function get_go_choose_person_function(){
+    setTimeout(function() {test_go_choose_person_function()}, 700);
+    function test_go_choose_person_function(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
             var scope = angular.element(order_details_page_id).scope();
@@ -163,8 +163,8 @@ function compute_result_of_js_angular_section_4_practice_1() {
         }
     }
 
-    setTimeout(function() {test_choose_name()}, 1400);
-    function test_choose_name(){
+    setTimeout(function() {test_person_name()}, 1400);
+    function test_person_name(){
         var choose_people_page_id = document.getElementById("choose_people_page");
         if (choose_people_page_id) {
             var scope = angular.element(choose_people_page_id).scope();
@@ -194,8 +194,8 @@ function compute_result_of_js_angular_section_4_practice_2() {
         });
     }
 
-    setTimeout(function() {get_go_choose_person_function()}, 700);
-    function get_go_choose_person_function(){
+    setTimeout(function() {test_go_choose_person_function()}, 700);
+    function test_go_choose_person_function(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
             var scope = angular.element(order_details_page_id).scope();

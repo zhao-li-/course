@@ -50,22 +50,26 @@ function compute_result_of_js_angular_section_2_practice_1() {
         });
     }
 
-    setTimeout('get_choose_people()', 700);
     function get_choose_people(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
             var scope = angular.element(order_details_page_id).scope();
 
             if (scope.choose_people && scope.choose_people == "选人") {
+                console.log("1")
                 source.postMessage(true, "http://" + window.location.host);
             } else {
+                console.log("2")
                 source.postMessage(false, "http://" + window.location.host);
             }
 
         } else {
+            console.log("22")
             source.postMessage(false, "http://" + window.location.host);
         }
     }
+    setTimeout(function() {get_choose_people()}, 700);
+
 }
 
 function compute_result_of_js_angular_section_2_practice_2() {
@@ -78,7 +82,7 @@ function compute_result_of_js_angular_section_2_practice_2() {
         });
     }
 
-    setTimeout('get_go_choose_function()', 700);
+    setTimeout(function() {get_go_choose_function()}, 700);
     function get_go_choose_function(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
@@ -105,7 +109,7 @@ function compute_result_of_js_angular_section_3_practice_1() {
         });
     }
 
-    setTimeout('get_go_choose_person_function()', 700);
+    setTimeout(function() {get_go_choose_person_function()}, 700);
     function get_go_choose_person_function(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
@@ -116,7 +120,7 @@ function compute_result_of_js_angular_section_3_practice_1() {
         }
     }
 
-    setTimeout('test_person_name()', 1400);
+    setTimeout(function() {test_person_name()}, 1400);
     function test_person_name(){
         var choose_people_page_id = document.getElementById("choose_people_page");
         if (choose_people_page_id) {
@@ -148,7 +152,7 @@ function compute_result_of_js_angular_section_4_practice_1() {
         });
     }
 
-    setTimeout('get_go_choose_person_function()', 700);
+    setTimeout(function() {get_go_choose_person_function()}, 700);
     function get_go_choose_person_function(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
@@ -159,7 +163,7 @@ function compute_result_of_js_angular_section_4_practice_1() {
         }
     }
 
-    setTimeout('test_choose_name()', 1400);
+    setTimeout(function() {test_choose_name()}, 1400);
     function test_choose_name(){
         var choose_people_page_id = document.getElementById("choose_people_page");
         if (choose_people_page_id) {
@@ -190,7 +194,7 @@ function compute_result_of_js_angular_section_4_practice_2() {
         });
     }
 
-    setTimeout('get_go_choose_person_function()', 700);
+    setTimeout(function() {get_go_choose_person_function()}, 700);
     function get_go_choose_person_function(){
         var order_details_page_id = document.getElementById("order_details_page")
         if (order_details_page_id) {
@@ -201,7 +205,7 @@ function compute_result_of_js_angular_section_4_practice_2() {
         }
     }
 
-    setTimeout('test_ngshow()', 1400);
+    setTimeout(function() {test_ngshow()}, 1400);
     function test_ngshow(){
         var choose_people_page_id = document.getElementById("choose_people_page");
         if (choose_people_page_id) {

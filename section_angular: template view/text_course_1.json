@@ -1,20 +1,11 @@
 {
-    "title": "",
-    "type": "topic",
+    "title": "路由功能简介",
+    "type": "text",
     "order": 0,
-
     "desc": [
-        "<p>Let's look at a basic example. This example should be familiar(and predictable) to just about anyone with a bit of programming experience:</p>"
-    ],
-    "code": "function() {\r\t var a = 10;\r\t if (a > 5) {\r\t\t a = 7;\r\t }\r\t alert(a);\r}",
-    "question": {
-        "content": "When executed, what Value will be alerted to the screen?",
-        "options": ["7", "10", "null", "undefined"]
-    },
-    "answer": {
-        "value": "7",
-        "explains": [
-            "<p>What happens here is exactly as you might expect. You declare a local variable and set its value to 10. Its value is indeed greater than 5, so you set its value to 7. You then alert this new value, 7</p>"
-        ]
-    }
+        "<p>为了给我们的应用配置路由，我们需要给应用创建一个模块。我们管这个模块叫做orderMasterApp，并且通过使用config，我们请求把$routeProvider（这项服务使得控制器、视图模板与当前浏览器的URL可以轻易集成）注入到我们的配置函数,并且使用$routeProvider.when来定义我们的路由规则。</p>",
+        "<p>下面我们看一个简单的例子：</p>",
+        "<pre><code class='javascript'>angular.module('orderMasterApp', [])\r\t.config(function ($routeProvider) {\r\t$routeProvider\r\t.when('/', {\r\ttemplateUrl: 'views/main.html',\r\tcontroller: 'MainCtrl'\r\t})\r\t.when('/choose_person', {\r\ttemplateUrl: 'views/choose_person.html',\r\tcontroller: 'ChoosePersonCtrl'\r\t})\r\t.otherwise({\r\tredirectTo: '/'\r\t});\r\t});</code></pre>",
+        "<p>这段代码有什么功能呢？当URL映射段为'/choose_person'时，选人视图会被显示出来。为了构造这个视图，AngularJS会使用'choose_person.html'模板和'ChoosePersonCtrl'控制器。.otherwise({redirectTo:'/'});语句使得当浏览器地址不能匹配我们任何一个路由规则时，触发重定向到/，也就是会显示'main.html'页面。</p>",
+    ]
 }

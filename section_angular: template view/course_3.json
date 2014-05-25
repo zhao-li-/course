@@ -2,7 +2,6 @@
     "title": "路由的视图模板",
     "type": "topic",
     "order": 2,
-
     "desc": [
         "<p>假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，放在与route.js路由文件同级的views文件夹下;的控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
     ],

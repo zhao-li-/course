@@ -1,0 +1,20 @@
+{
+    "title": "The Very Basic",
+    "type": "topic",
+    "order": 0,
+
+    "desc": [
+        "<p>Let's look at a basic example. This example should be familiar(and predictable) to just about anyone with a bit of programming experience:</p>"
+    ],
+    "code": "function() {\r\t var a = 10;\r\t if (a > 5) {\r\t\t a = 7;\r\t }\r\t alert(a);\r}",
+    "question": {
+        "content": "When executed, what Value will be alerted to the screen?",
+        "options": ["7", "10", "null", "undefined"]
+    },
+    "answer": {
+        "value": "7",
+        "explains": [
+            "<p>What happens here is exactly as you might expect. You declare a local variable and set its value to 10. Its value is indeed greater than 5, so you set its value to 7. You then alert this new value, 7</p>"
+        ]
+    }
+}

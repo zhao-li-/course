@@ -1,0 +1,13 @@
+{
+    "title": "Global Variables Intro",
+    "type": "text",
+    "order": 1,
+
+    "desc": [
+        "<p>Okay, that's a bit odd, you might be saying, But what if you're not in a function? Are there global variables?  Good question!  I wish I'd thought of it myself.</p>",
+        "<p>Let's look at some code:</p>",
+        "<pre><code class='javascript'>function() {\r\t a = 3;\r\t alert(a);\r}</code></pre>",
+        "<p>Now, what exactly is a global variable?  Where does it actually reside?</p>",
+        "<p>When Javascript comes across a global variable, it needs somewhere to put it.  It needs somewhere that everywhere else on the page can access.  So, it uses the window object.  This object is around for the entire lifetime of the page, and everything can access it, so it's perfect!</p>"
+    ]
+}

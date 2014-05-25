@@ -1,0 +1,20 @@
+{
+    "title": "路由的URL",
+    "type": "topic",
+    "order": 1,
+
+    "desc": [
+        "<p>假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
+    ],
+    "code": ".when('URL', {\r\ttemplateUrl: 'views/choose_person.html',\r\tcontroller: 'ChoosePersonCtrl'\r\t})",
+    "question": {
+        "content": "那么上面给出代码中第一行的'URL'应该怎么写呢？",
+        "options": ["choose_person","/choose_person","Url=choose_person"]
+    },
+    "answer": {
+        "value": "/choose_person",
+        "explains": [
+            "<p>这里直接写出用户访问的URL即可，答案应该是'choose_person'</p>"
+        ]
+    }
+}

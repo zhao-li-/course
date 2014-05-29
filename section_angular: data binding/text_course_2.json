@@ -16,5 +16,4 @@
             "<p>我们通过'$scope.alert_tip'获取到页面上的按钮事件，然后再写出其对应的事件代码。答案应该是'$scope.alert_tip = function(){alert('hello!')}'。</p>"
         ]
     }
-
 }

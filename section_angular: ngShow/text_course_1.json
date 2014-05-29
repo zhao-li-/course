@@ -16,5 +16,4 @@
             "<p>我们已经知道当ngShow的属性为真时显示内容，否则不显示。所以ng-show='true'的div会显示，而ng-show='false'的div则不显示。答案是'显示，true'</p>"
         ]
     }
-
 }

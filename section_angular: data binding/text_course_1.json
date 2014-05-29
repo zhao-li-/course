@@ -3,7 +3,7 @@
     "type": "topic",
     "order": 0,
     "desc": [
-        "<p>ngRepeat命令主要是在页面上显示数据使用。他可以当做属性来用，参数也是多种多样。这里介绍最简单的两种用法：</p><p>'variable in expression'，其中'variable'是用户定义的循环变量，'expression'给出一个集合。例如：item in items ，我们可以直接枚举出items这个数组，也可以在控制器中控制这个数组的值;</p><p>'(key, value) in expression'其中'(key, value)'也是可供用户自定义，而'expression'是一个集合（可以是枚举，或动态控制），例如：(name, age) in {'adam':10, 'amalie':12}</p>"
+        "<p>ngRepeat命令主要是在页面上显示数据使用。他可以当做属性来用，参数也是多种多样。这里介绍最简单的两种用法：1.'variable in expression'，其中'variable'是用户定义的循环变量，'expression'给出一个集合。例如：item in items ，我们可以直接枚举出items这个数组，也可以在控制器中控制这个数组的值;2.'(key, value) in expression'其中'(key, value)'也是可供用户自定义，而'expression'是一个集合（可以是枚举，或动态控制），例如：(name, age) in {'adam':10, 'amalie':12}</p>"
     ],
     "code": "<li ng-repeat='number in {1,2,3}'>{{number}}</li>",
     "question": {

@@ -5,7 +5,7 @@
     "desc": [
         "<p>假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
     ],
-    "code": "//route.js文件中代码片段：\r\t.when('/choose_person', {\r\ttemplateUrl: 'views/choose_person.html',\r\tcontroller: '控制器'\r\t})\r\t\r\t//choose_person_controller.js文件中内容为：\r\tangular.module('orderMasterApp')\r\t.controller('ChoosePersonCtrl', function ($scope) {\r\t$scope.awesomeThings = [\r\t'HTML5 Boilerplate',\r\t'AngularJS',\r\t'Karma'\r\t];\r\t});",
+    "code": "//route.js文件中代码片段：\r\t.when('/choose_person', {\r\t    templateUrl: 'views/choose_person.html',\r\t    controller: '控制器'\r\t})\r\t\r\t//choose_person_controller.js文件中内容为：\r\tangular.module('orderMasterApp')\r\t.controller('ChoosePersonCtrl', function ($scope) {\r\t    $scope.awesomeThings = [\r\t        'HTML5 Boilerplate',\r\t        'AngularJS',\r\t        'Karma'\r\t    ];\r\t});",
     "question": {
         "content": "那么上面给出代码中'控制器'应该怎么写呢？",
         "options": ["choose_person_controller.js","choose_person_controller","ChoosePersonCtrl"]

@@ -3,7 +3,7 @@
     "type": "topic",
     "order": 2,
     "desc": [
-        "<p>route参数中的templateUrl是string或function类型，，当视图模板为单独的html文件或是使用了<script type='text/ng-template'>定义模板时使用,是要渲染的HTML页面的文件路径。假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，放在与route.js路由文件同级的views文件夹下;控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
+        "<p>route参数中的templateUrl是string或function类型，当视图模板为单独的html文件或是使用了<script type='text/ng-template'>定义模板时使用,是要渲染的HTML页面的文件路径。假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，放在与route.js路由文件同级的views文件夹下;控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
     ],
     "code": ".when('/choose_person', {\r\ttemplateUrl: '视图模板',\r\tcontroller: 'ChoosePersonCtrl'\r\t})",
     "question": {

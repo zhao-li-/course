@@ -6,8 +6,8 @@
         "<p>AngularJS路由功能是通过不同的URL会路由到不同的控制器上(controller)，再渲染(render)到页面(HTML)。我们可以在一个单独的文件中写出ngRoute模块，再在页面上引入这个文件，在模块声明中注入对ngRoute的依赖（angular.module('orderMasterApp', ['ngRoute'])）后，就可以使用路由功能了。</p>",
         "<p>为了给我们的应用配置路由，我们需要给应用创建一个模块。我们管这个模块叫做orderMasterApp，并且通过使用config，我们请求把$routeProvider（这项服务使得控制器、视图模板与当前浏览器的URL可以轻易集成）注入到我们的配置函数。$routeProvider提供了定义路由表的服务，它有两个核心方法，when(path,route)和otherwise(params)。</p>",
         "<p>when(path,route)方法接收两个参数。path是一个string类型，表示该条路由规则所匹配的路径，它将与地址栏的内容($location.path)值进行匹配。route参数是一个object，用来指定当path匹配后所需的一系列配置项，包括以下内容：controller，controllerAs，template，templateUrl，resolve，redirectTo。对于route参数，一般我们使用最简单的情况：一个指定的controller，一个html文件作为模板使用。</p>",
-        "<p>下面我们看一个简单的例子：</p>",
         "<p>otherwise(params)方法对应路径匹配不到时的情况，这时候我们可以配置一个redirectTo参数，让它重定向到指定页面</p>",
+        "<p>下面我们看一个简单的例子：</p>",
         "<pre><code class='javascript'>angular.module('orderMasterApp', [])\r\t  .config(function ($routeProvider) {\r\t      $routeProvider\r\t            .when('/', {\r\t                templateUrl: 'views/main.html',\r\t                controller: 'MainCtrl'\r\t            })\r\t            .when('/choose_person', {\r\t                templateUrl: 'views/choose_person.html',\r\t                controller: 'ChoosePersonCtrl'\r\t            })\r\t            .otherwise({\r\t                redirectTo: '/'\r\t            });\r\t});</code></pre>",
         "<p>这段代码有什么功能呢？当URL映射段为'/choose_person'时，选人视图会被显示出来。为了构造这个视图，AngularJS会使用'choose_person.html'模板和'ChoosePersonCtrl'控制器。.otherwise({redirectTo:'/'});语句使得当浏览器地址不能匹配我们任何一个路由规则时，触发重定向到/，也就是会显示'main.html'页面。</p>"
     ]

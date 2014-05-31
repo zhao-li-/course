@@ -8,12 +8,12 @@
     "code": "<li ng-repeat='(name, age) in {'adam':10, 'amalie':12}'>{{name}}:{{age}}</li>",
     "question": {
         "content": "那么当我们预览时，页面会显示什么内容呢？",
-        "options": ["1","number","1 2 3"]
+        "options": ["name:age","adam:10 amalie:12","name:adam  age:10 name:amalie  age:12"]
     },
     "answer": {
-        "value": "1 2 3",
+        "value": "adam:10 amalie:12",
         "explains": [
-            "<p>这里使用的是上面介绍的第一种用法，我们使用ngRepeat从'{1,2,3}'数组中取出每一个元素，答案是'1 2 3'</p>"
+            "<p>我们使用ngRepeat从{'adam':10, 'amalie':12}中取出每一个元素，答案是'adam:10 amalie:12'</p>"
         ]
     }
 }

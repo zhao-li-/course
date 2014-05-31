@@ -3,7 +3,7 @@
     "type": "topic",
     "order": 1,
     "desc": [
-        "<p>'variable in expression'格式，其中'variable'是用户定义的循环变量，'expression'给出一个集合。例如：item in items ，我们可以直接枚举出items这个数组，也可以在控制器中控制这个数组的值;</p>",
+        "<p>'variable in expression'格式，其中'variable'是用户定义的循环变量，'expression'给出一个集合。例如：item in items ，我们可以直接枚举出items这个数组，也可以在控制器中控制这个数组的值;</p>"
     ],
     "code": "<li ng-repeat='number in [1,2,3]'>{{number}}</li>",
     "question": {

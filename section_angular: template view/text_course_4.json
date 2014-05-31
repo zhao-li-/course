@@ -1,9 +1,9 @@
 {
-    "title": "路由的控制器",
+    "title": "route参数中的controller",
     "type": "topic",
     "order": 3,
     "desc": [
-        "<p>假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
+        "<p>route参数中的controller是function或string类型，是在当前模板上执行的controller函数，生成新的scope。假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
     ],
     "code": "//route.js文件中代码片段：\r\t.when('/choose_person', {\r\t    templateUrl: 'views/choose_person.html',\r\t    controller: '控制器'\r\t})\r\t\r\t//choose_person_controller.js文件中内容为：\r\tangular.module('orderMasterApp')\r\t.controller('ChoosePersonCtrl', function ($scope) {\r\t    $scope.awesomeThings = [\r\t        'HTML5 Boilerplate',\r\t        'AngularJS',\r\t        'Karma'\r\t    ];\r\t});",
     "question": {
@@ -13,7 +13,7 @@
     "answer": {
         "value": "ChoosePersonCtrl",
         "explains": [
-            "<p>这里应该写出控制器的名字，而不是控制器的文件名，答案应该是'ChoosePersonCtrl'</p>"
+            "<p>这里应该写出控制器的函数名，而不是控制器的文件名，答案应该是'ChoosePersonCtrl'</p>"
         ]
     }
 }

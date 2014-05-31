@@ -13,7 +13,7 @@
     "answer": {
         "value": "/choose_person",
         "explains": [
-            "<p>这里直接写出用户在地址栏中访问的URL即可，答案应该是'choose_person'</p>"
+            "<p>这里直接写出用户在地址栏中访问的URL即可，答案应该是'/choose_person'</p>"
         ]
     }
 }

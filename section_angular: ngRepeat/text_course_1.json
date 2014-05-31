@@ -1,19 +1,8 @@
 {
-    "title": "ngRepeat",
-    "type": "topic",
+    "title": "ngRepeat简介",
+    "type": "text",
     "order": 0,
     "desc": [
-        "<p>ngRepeat命令主要是在页面上显示数据使用。他可以当做属性来用，参数也是多种多样。这里介绍最简单的两种用法：</p><p>'variable in expression'，其中'variable'是用户定义的循环变量，'expression'给出一个集合。例如：item in items ，我们可以直接枚举出items这个数组，也可以在控制器中控制这个数组的值;</p><p>'(key, value) in expression'其中'(key, value)'也是可供用户自定义，而'expression'是一个集合（可以是枚举，或动态控制），例如：(name, age) in {'adam':10, 'amalie':12}</p>"
-    ],
-    "code": "<li ng-repeat='number in {1,2,3}'>{{number}}</li>",
-    "question": {
-        "content": "那么当我们预览时，页面会显示什么内容呢？",
-        "options": ["1","number","1 2 3"]
-    },
-    "answer": {
-        "value": "1 2 3",
-        "explains": [
-            "<p>这里使用的是上面介绍的第一种用法，我们使用ngRepeat从'{1,2,3}'数组中取出每一个元素，答案是'1 2 3'</p>"
-        ]
-    }
+        "<p>ngRepeat命令主要是在页面上显示数据使用。使用格式为ngRepeat='{repeat_expression}'。其中'repeat_expression'指示如何枚举集合的表达式，目前支持两种格式。另外，它还有一些特殊属性：$index（数据类型为number，是元素的迭代器），$first（数据类型为boolean，如果元素在迭代器中是第一个，则为真值），$middle（数据类型为boolean，如果元素在迭代器中位于第一个和最后一个中间，则为真值），$last（数据类型为boolean，如果元素在迭代器中位于最后一个，则为真值）</p>"
+    ]
 }

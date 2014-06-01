@@ -1,9 +1,9 @@
 {
-    "title": "path参数",
+    "title": "路由的path",
     "type": "topic",
     "order": 1,
     "desc": [
-        "<p>路由的path参数是用户要访问的URL资源，会与用户在地址栏中输入的网址相匹配。假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
+        "<p>路由的path是用户要访问的URL资源，会与用户在地址栏中输入的网址相匹配。假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
     ],
     "code": ".when('path', {\r\ttemplateUrl: 'views/choose_person.html',\r\tcontroller: 'ChoosePersonCtrl'\r\t})",
     "question": {

@@ -3,17 +3,19 @@
     "type": "topic",
     "order": 1,
     "desc": [
-        "<p>路由的path是用户要访问的URL资源，会与用户在地址栏中输入的网址相匹配。假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，控制器文件是'choose_person_controller.js')，我们要实现当用户访问'/choose_person'时会呈献出'choose_person.html'的页面。</p>"
+        "<p>正像前面说的，$routeProvider提供了完整的门牌号与房间的对应表，其中when方法就是为了可以根据门牌号，找到对应的房间。</p>",
+        "<p>而这个门牌号就是我们现在讲的path，path与用户在地址栏中输入的URL一一对应。例如，当一个用户输入URL为'localhost:3000/name'，那么path即为'/name'，它是URL中去掉域名的部分。</p>",
+        "<p>这个房间就是我们要展现给用户的页面：choose_person.html</p>"
     ],
-    "code": ".when('path', {\r\ttemplateUrl: 'views/choose_person.html',\r\tcontroller: 'ChoosePersonCtrl'\r\t})",
+    "code": ".when('path' \/\/path是我们的门牌号, \r\t\{    ...    /\/这里写我们的房间})",
     "question": {
-        "content": "那么上面给出代码中第一行的'path'应该怎么写呢？",
-        "options": ["choose_person","/choose_person","Url=choose_person"]
+        "content": "一个用户在地址栏输入了'localhost:3000/choose_person/liming'，那么浏览器就会展现出'liming'页面给用户。那么这里的path是什么呢？",
+        "options": ["/liming","/choose_person/liming","localhost:3000/choose_person/liming"]
     },
     "answer": {
-        "value": "/choose_person",
+        "value": "/choose_person/liming",
         "explains": [
-            "<p>这里直接写出用户在地址栏中访问的URL即可，答案应该是'/choose_person'</p>"
+            "<p>这里的URL是'localhost:3000/choose_person/liming'，域名是'localhost:3000'，那么URL中去掉域名，答案当然是'/choose_person/liming'</p>"
         ]
     }
 }

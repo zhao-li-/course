@@ -9,7 +9,7 @@
     ],
     "code": ".when('/choose_person/liming', {\r\ttemplateUrl: '页面模板',\r\tcontroller: 'ChoosePersonCtrl'\r\t})",
     "question": {
-        "content": "假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，放在与route.js路由文件同级的views文件夹下)，我们要实现当用户访问'/choose_person/liming'时会呈献出'choose_person.html'的页面。那么代码区中'页面模板'应该怎么填写？",
+        "content": "假设我们已经有'choose_person.html'这个页面的资源（模版文件是'views/choose_person.html'，放在与route.js路由文件同级的views文件夹下)，我们要实现当用户访问'/choose_person/liming'时会展现出'choose_person.html'的页面。那么代码区中'页面模板'应该怎么填写？",
         "options": ["views/choose_person.html","choose_person.html","choose_person"]
     },
     "answer": {
